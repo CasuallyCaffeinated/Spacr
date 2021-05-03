@@ -1,0 +1,50 @@
+@import "../../index.css";
+
+#footer {
+    width: 100%;
+    height: 4.1rem;
+    /* margin-top: 15px !important; */
+    background-color: var(--bg);
+    position:fixed;
+    bottom: 0px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-main-div {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 4.2rem;
+    background-color: var(--bg);
+}
+
+.footer-main-div ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.footer-main-div li {
+    margin: 0px 15px;
+}
+
+.dev {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.4rem;
+    color: var(--text-color)
+}
+
+.footer-main-div .footer-dash {
+    color: var(--text-color);
+    font-weight: 900;
+}
+
+.footer-main-div a {
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1rem;
+    color: var(--text-color)
+}

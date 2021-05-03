@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Merriweather:wght@300;400&family=Open+Sans:wght@300&family=Ubuntu:wght@300;400&family=Zen+Dots&display=swap');
+
+/* font-family: 'Lora', serif;
+font-family: 'Merriweather', serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Zen Dots', cursive; */
+
+@import "../../index.css";
+
+#master-div {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* background: rgba(102, 73, 184, 0.75); */
+}
+
+.image-container {
+    margin: 0rem 3rem 0rem 3rem;
+}
+
+.heading-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading.title {
+    font-family: 'Zen Dots', cursive;
+    font-size: 1.10rem;
+}
+
+.images-space {
+    width: 100%;
+    height: 50%;
+    box-shadow: 1px 1px 12px 1px rgba(0, 0, 0, 0.7)!important;
+    padding: 1rem;
+}
+
+.heading.author {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+}
+
+#img-desc {
+    font-family: 'Merriweather', serif;
+    font-size: 1.10rem;
+    line-height: 1.25rem;
+    font-weight: bold;
+}
+
+#img-desc p {
+    font-size: 0.9rem;
+    font-weight: normal;
+    border: 2.5px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+
+/* DROPDOWN */
+.dd-span {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: auto;
+    height: auto;
+}
+
+.dd-span button {
+        display: inline-block;
+        border: none;
+        border-radius: 10px;
+        padding: 0.5rem 1rem;
+        margin: 0;
+        text-decoration: none;
+        background: #0069ed;
+        /* box-shadow: 1px 1px 12px 2px rgba(0, 0, 0, 0.7)!important; */
+        /* border: 2px solid rgba(0, 0, 0, 0.9); */
+        color: #ffffff;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1rem;
+        cursor: pointer;
+        text-align: center;
+        transition: background 200ms ease-in-out,
+                    transform 150ms ease;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+
+    .dd-span button:hover,
+    .dd-span button:focus {
+        background: #0053ba;
+    }
+
+    .dd-span button:active {
+        transform: scale(0.99);
+    }
+
+
+.dropdown-town {
+    display: flex;
+    background-color: var(--bg-accent)!important;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 10rem;
+    height: 4.8rem;
+    position: absolute;
+    z-index: 1;
+    transform: translateY(50%);
+    border-radius: 10px;
+    box-shadow: 1px 1px 12px 2px rgba(0, 0, 0, 0.7)!important;
+    border: 2px solid rgba(0, 0, 0, 0.9)
+}
+
+.dropdown-town button {
+    width: 5rem;
+    border-radius: 10px;
+    /* margin: 2% 0 0; */
+    padding: 2%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.dd-span #red-btn, #delete-btn {
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+    /* padding: 0.5rem 1rem; */
+    margin: 0;
+    text-decoration: none;
+    background:#d9534f;
+    color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 200ms ease-in-out,
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.dd-span #red-btn:hover,
+.dd-span #red-btn:focus {
+    background: #d40700;
+}
+
+.dd-span #red-btn:active{
+    transform: scale(0.99);
+}
+
+/* EDIT PICTURE MODAL */
+#modal-form {
+    height: 15rem;
+    width: 21rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--form-accent);
+    border-radius: 3px;
+    position: absolute;
+    /* transform: translateY(69%);
+    transform: translateX(-25%); */
+    transform: translate3d(-2.8rem, 66.5%, 3rem);
+    border-radius: 10px;
+    z-index: 1;
+    box-shadow: 1px 1px 12px 2px rgba(0, 0, 0, 0.7)!important;
+    border: 2px solid rgba(0, 0, 0, 0.9)
+}
+
+/* DELETE MODAL */
+#delete-modal {
+    height: 5rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--form-accent);
+    border-radius: 3px;
+    position: absolute;
+    /* transform: translateY(69%);
+    transform: translateX(-25%); */
+    transform: translate3d(-10rem, 100%, 3rem);
+    border-radius: 10px;
+    z-index: 1;
+    box-shadow: 1px 1px 12px 2px rgba(0, 0, 0, 0.7)!important;
+    border: 2px solid rgba(0, 0, 0, 0.9)
+}
+
+#modal-body {
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    width: auto;
+}
+
+#modal-body label {
+    width: 30rem;
+    height: 5rem;
+    font-family: 'Merriweather', serif;
+    display: flex;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#delete-btns {
+    display: flex;;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* width: 30rem; */
+    height: 4rem;;
+}
+
+/* #delete-btn:focus {
+    background: #d40700;
+} */
+
+#delete-modal button {
+    height: 2rem;
+    width: auto;
+    margin: 0.5rem 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 0 0.2rem;
+}
+
+.main-form-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+}
+
+.main-form-body label {
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+.main-form-body label, input, textarea{
+    display: block;
+}
+
+.main-form-body input, textarea {
+    border-radius: 5px;
+    border: 2px solid black;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    /* outline: 4px solid black; */
+}
+
+.modal-form-btns {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#modal-form label {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* [fadeInDown="1"] { */
+.dropdown-town.fadeInDown {
+  animation: fadeInDown 1s 1;
+}
+
+@keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 0%, 0);
+    }
+
+    to {
+      opacity: 1;
+      transform: translate3d(0, 50%, 0);
+    }
+  }
+
+  /* PROFILE HEADER COMPONENT */
+.ph-container {
+    position: relative;
+    top: 60px;
+    margin-bottom: 5rem;
+    background-image: url("https://apod.nasa.gov/apod/image/2008/helix_blancoHubble_6145.jpg");
+    background-position: center center;
+    background-position: cover;
+    background-size: cover;
+}
+
+.ph-welcome-msg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ph-welcome-msg > h1 {
+    font-family: 'Fira Sans', sans-serif;
+    border-radius: 10px;
+    border: 5px solid rgba(255, 255, 255, 0.7);
+    padding: 10px 15px;
+    color: var(--text-color);
+}
+
+.add-pic-div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 90%;
+    position: absolute;
+    z-index: 1;
+    bottom: 0.2rem;
+    left: 2rem;
+}
+
+.add-pic-div > ul  {
+    border-radius: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.7);
+    padding: 2px 4px;
+
+    color: var(--text-color);
+    font-weight: 900;
+}
+
+.add-pic-modal-text {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.add-pic-div button {
+    background: #0069ed;
+    transition: background 200ms ease-in-out,
+    transform 150ms ease;
+}
+
+.add-pic-div button:hover,
+.add-pic-div button:focus {
+    background: #0053ba;
+}
+
+.add-pic-div button:active {
+    transform: scale(0.99);
+}
+
+
+.border-div hr {
+    border-style: none;
+    border-bottom-style: dotted;
+    color: lightgray;
+    width: 20%;
+    border-width: 8px;
+    height: 5%;
+    margin-bottom: 2rem;
+}
+
+
+/* ADD IMAGE MODAL STARTS HERE */
+.add-img-modal {
+    /*size*/
+    width: 400px;
+    height: 400px;
+    /*display*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*positioning*/
+    position: absolute;
+    top: 5.8rem;
+    left: 0.1rem;
+    z-index: 1;
+
+    /*traits*/
+    /* background-color: var(--text-color); */
+    background-image: url("https://apod.nasa.gov/apod/image/2103/M64_Hubble_4032.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    border: 3px solid rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+.add-img-error-div {
+
+    font-size: 1.25rem;
+    font-weight: 900;
+    /* color: var(--warning-color-deeper); */
+    color:rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    width: 55%;
+    height: 395px;
+    padding: 10px 5px;
+    background-color: rgba(7, 41, 194, 0.658);
+    border: 3px solid rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 395px;
+    font-style: italic;
+}
+
+.main-add-img-modal-body {
+     /*size*/
+    width: 300px;
+     height: 300px;
+     /*display*/
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+.add-img-form
+label,
+button {
+    margin: 15px;
+    font-family: 'Fira Sans', sans-serif;
+    padding: 5px 20px;
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    background-color: var(--bg-accent);
+    color: var(--text-color)
+}
+
+.add-img-modal-labels {
+    margin: 2% 0;
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+    color:rgba(0, 0, 0, 0.7)
+}
+
+.add-img-modal-labels select {
+    display: block;
+}
+
+.add-img-modal-labels
+ input,
+ select,
+ textarea {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    padding: 5px 20px;
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    background-color: var(--bg-accent);
+    color: var(--text-color)!important;
+ }

@@ -1,0 +1,61 @@
+/* TODO Add site wide styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Merriweather:wght@300;400&family=Open+Sans:wght@300&family=Ubuntu:wght@300;400&family=Zen+Dots&display=swap');
+
+/* font-family: 'Lora', serif;
+font-family: 'Merriweather', serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Zen Dots', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Fira+Sans:wght@200&family=Oswald:wght@300&display=swap');
+
+/* font-family: 'Courgette', cursive;
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Oswald', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+
+* {
+    box-sizing: border-box;
+
+}
+
+
+body,
+ul,
+div,
+img,
+form,
+footer {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+:root {
+    --bg: #242526;
+    --bg-accent: #484A4D;
+    --form-accent:#c08efa;
+    --text-color: #DADCE1;
+    --nav-size: 60px;
+    --border: 1px solid #474A4D;
+    --border-radius: 8px;
+    --speed: 500ms;
+    --warning-color: #d9534f;
+    --warning-color-deep: #e42019;
+    --warning-color-deeper: #ff0e06;
+}
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}

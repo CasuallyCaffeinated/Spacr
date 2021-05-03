@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400&family=MuseoModerno:wght@200&family=Roboto:wght@300&family=Sue+Ellen+Francisco&display=swap');
+
+@import "../../index.css";
+
+#form-main-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img-div {
+    /* background-image: url("https://apod.nasa.gov/apod/image/2103/AroundOrion_Symon_2000.jpg"); */
+    background-image: url("https://apod.nasa.gov/apod/image/1402/auroraNZ_weir_2048.jpg");
+    background-repeat: no-repeat;
+    background-position:cover;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+#form-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    top: 60px;
+}
+
+.error-ul-div-sign-up {
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: var(--warning-color-deep);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: auto;
+    padding: 5px 5px;
+    background-color: rgba(73, 93, 184, 0.45);
+    border: 3px solid rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    position: absolute;
+    top: 1.5rem;
+    left: 80px;
+}
+
+.formSignup {
+    /* border: 2px solid rgba(0, 0, 0, 0.75); */
+    background-color: rgba(102, 73, 184, 0.45);
+    /* background-color: var(--form-accent); */
+    padding: 10px 30px 0px 30px;
+    border: 3px solid rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+}
+
+
+
+.formSignup label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 1.25rem;
+    color: var(--text-color);
+    margin-top: 10px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formSignup input {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 1rem;
+    margin-top: 9.5px;
+    padding:  0.5rem 3rem;
+    border: 1px solid rgba(2, 71, 139, 0.65);
+    border-radius: 10px;
+    outline: none;
+}
+
+::placeholder {
+    font-size: 1rem;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+}
+
+.input2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 1.25rem;
+    display: block;
+    position: relative;
+    /* right: 0.5rem; */
+    margin-top: 10px;
+    padding:  0.5rem 1.35rem;
+    border: 1px solid rgba(2, 71, 139, 0.65);
+    border-radius: 10px;
+    outline: none;
+}
+
+.formSignup button {
+    width: 55%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 1rem;
+    margin-top: 18px;
+    margin-bottom: 20px;
+    position: relative;
+    /* right: 0.5rem; */
+    padding:  0.5rem 1.35rem;
+    border: 2px solid var(--text-color);
+    border-radius: 10px;
+    outline: none;
+}
+
+.formSignup button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 133, 106, 0.726);
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+#after-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#after-form h4 {
+    color: rgb(140, 239, 247);
+    /* opacity: 0.85; */
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-weight: 900;
+    font-size: 1.2rem;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+#after-form a {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Courgette', cursive;
+    /* font-weight: 900; */
+}
+
+#after-form p {
+    background-color: #fff;
+    opacity: 0.75;
+    border: 2px solid var(--text-color);
+    padding: 3px 5px;
+    border-radius: 5px;
+    /* box-shadow: 0px 0px 5px 2px var(--text-color); */
+    font-size: 1rem;
+}
+
+#after-form p:hover {
+    /* background-color: rgba(14, 179, 143, 0.726); */
+    background-color: rgba(0, 133, 106, 0.726);
+}

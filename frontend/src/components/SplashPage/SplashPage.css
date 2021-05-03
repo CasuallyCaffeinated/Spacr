@@ -1,0 +1,106 @@
+@import "../../index.css";
+
+#hp-master-container {
+    background-repeat: no-repeat;
+    background-position:cover;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+#hp-master-container::-webkit-scrollbar {
+    display: none;
+}
+
+img {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    overflow: clip!important;
+}
+
+.bg-img-outer {
+    background-image: url("https://apod.nasa.gov/apod/image/1510/IC1871_HSTwager.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    transition: opacity;
+    transition-duration: 3s;
+    overflow: clip!important;
+}
+
+.bg-img-inner {
+    background-image: url("https://apod.nasa.gov/apod/image/2103/VolcanoStars_Vella_1920.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 700px;
+    transition: opacity;
+    transition-duration: 3s;
+    opacity: 0;
+    overflow: clip!important;
+}
+
+#welcome-div {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 32rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome-msg {
+    color: var(--text-color);
+    font-size: 3.4rem;
+    font-family: 'Zen Dots', cursive;
+    position: relative;
+    top: 2.2rem;
+}
+
+#welcome-msg-p {
+    color: var(--text-color);
+    font-size: 1.7rem;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    position: relative;
+    top: 2rem;
+    text-align: center;
+    line-height: 2.2rem;
+    /* color: rgba(0, 0, 0, 0.8); */
+    /* background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+    padding: 15px 20px; */
+}
+
+.action-call {
+    font-size: 2.2rem;
+    font-weight: 900;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#hp-pg__sign-up-btn {
+    font-size: 1.2rem;
+    background-color: var(--bg-accent);
+    position: relative;
+    top: 2rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: 1px 1px 12px 2px rgba(255, 255, 255, 0.7)!important;
+    border: 2px solid rgba(255, 255, 255, 0.9)
+}
+
+#hp-pg__sign-up-btn:hover {
+    opacity: 0.7;
+    transition: ease-in-out;
+    transition-duration: 100ms;
+    cursor: pointer;
+}

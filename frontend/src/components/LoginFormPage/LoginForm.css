@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400&family=MuseoModerno:wght@200&family=Roboto:wght@300&family=Sue+Ellen+Francisco&display=swap');
+
+.form-main-body-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://apod.nasa.gov/apod/image/2010/Quantrids_Slovinsky_2048.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.formLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+     background-color: rgba(102, 73, 184, 0.45);
+
+     margin-top: 1rem;
+     padding: 25px;
+     border: 3px solid rgba(0, 0, 0, 0.75);
+     border-radius: 10px;
+
+}
+
+.error-ul-div {
+
+    /* font-size: 1.25rem;
+    color: var(--warning-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 5px 5px;
+
+    background-color: rgba(73, 93, 184, 0.45);
+    border: 3px solid rgba(0, 0, 0, 0.75);
+    border-radius: 10px; */
+
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: var(--warning-color-deep);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: auto;
+    padding: 10px 5px;
+    background-color: rgba(73, 93, 184, 0.45);
+    border: 3px solid rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    position: absolute;
+    top: 11.5rem;
+    right: 80px;
+
+}
+
+.formLogin label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 1.25rem;
+    color: var(--text-color);
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 1.25rem;
+    display: block;
+    margin-top: 10px;
+    padding:  0.5rem 1.35rem;
+    border: 1px solid rgba(2, 71, 139, 0.65);
+    border-radius: 10px;
+    outline: none;
+}
+
+.input2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 1.25rem;
+    display: block;
+    margin-top: 10px;
+    padding:  0.5rem 1.35rem;
+    border: 1px solid rgba(2, 71, 139, 0.65);
+    border-radius: 10px;
+    outline: none;
+}
+
+.demo-user-btn {
+    width: 60%;
+    height: auto;
+
+    position: relative;
+    bottom: 0.5rem;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 1.25rem;
+    background-color: white!important;
+    color: black!important;
+
+    margin-top: 25px;
+    padding:  0.5rem 1.35rem;
+
+    border: 3px solid rgba(2, 71, 139, 0.65);
+    border-radius: 10px;
+    outline: none;
+}
+
+
+#demo-btn-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0!important;
+    width: 100%;
+    height: auto;
+    background-color: rgba(73, 93, 184, 0.45);
+    border: 3px solid rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+}
+
+.demo-user-btn:hover {
+    cursor: pointer;
+    background-color: rgba(0, 96, 191, 0.125)!important;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+    border: 3px solid rgba(0, 0, 0, 0.75);
+    color: var(--text-color)!important;
+}
+
+.login-form-btn {
+    width: 80%;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 1.25rem;
+
+    margin-top: 20px;
+    padding:  0.5rem 1.35rem;
+
+    background-color: white!important;
+    color: black!important;
+
+    border: 3px solid rgba(2, 71, 139, 0.65);
+    border-radius: 10px;
+    outline: none;
+}
+
+.login-form-btn:hover {
+    transition-duration: 500ms;
+    transition: ease-in;
+    cursor: pointer;
+    background-color: rgba(83, 59, 151, 0.616)!important;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+    border: 3px solid rgba(0, 0, 0, 0.75);
+    color: var(--text-color)!important;
+}
+
+/* #demo-btn button {
+    width: 20%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 1.25rem;
+    margin-top: 3%;
+    padding:  0.5rem 1.35rem;
+    border: 1px solid rgba(2, 71, 139, 0.65);
+    border-radius: 10px;
+    outline: none;
+} */
