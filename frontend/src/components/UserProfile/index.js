@@ -30,7 +30,8 @@ function UserProfile() {
         <ProfileHeader />
         <div id="master-div">
                         {
-                        Object.values(photos).map(image => <Photo key={image.id} image={image} />)
+                        Object.values(photos).map(image =>
+                        <Photo key={image.id} image={image} />)
                     }
         </div>
         <Footer />
