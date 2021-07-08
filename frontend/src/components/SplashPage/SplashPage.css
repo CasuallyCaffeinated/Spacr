@@ -6,6 +6,7 @@
     background-size: cover;
     width: 100%;
     height: 100vh;
+    overflow-y: hidden;
 }
 
 #hp-master-container::-webkit-scrollbar {
@@ -26,9 +27,10 @@ img {
     background-position: center center;
     background-size: cover;
     width: 100%;
-    height: 700px;
+    height: 43.75rem;
     transition: opacity;
     transition-duration: 3s;
+    overflow-y: hidden;
     overflow: clip!important;
 }
 
@@ -38,10 +40,11 @@ img {
     background-size: cover;
     background-position: center center;
     width: 100%;
-    height: 700px;
+    height: 43.75rem;
     transition: opacity;
     transition-duration: 3s;
     opacity: 0;
+    overflow-y: hidden;
     overflow: clip!important;
 }
 
