@@ -13,10 +13,12 @@
 ## Technologies Used
 ### Frontend
 * JavaScript
-* React / Redux
+* React 
+* Redux
 * CSS3
 * Font Awesome
 * Hosted live on Heroku
+
 ### Backend
 * Express.js
 * PostgreSQL database
