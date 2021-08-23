@@ -1,4 +1,4 @@
-// import { Navigation } from "./Navigation";
+
 
 //TODO: Make the splash page.
 //TODO: This page will consist of 3 main parts.
@@ -11,7 +11,6 @@
 import './SplashPage.css'
 import Footer from "../Footer/index"
 import images from "./images"
-// import Navigation from "../Navigation"
 
 //todo: import all the necessary hooks and actions
 import React from 'react';
@@ -24,7 +23,6 @@ function HomePage() {
 
 
 let index = 2;
-// let opacity = 0;
 let currentState = "inner";
 
 const outerDiv = useRef();
@@ -67,7 +65,6 @@ useEffect(() => {
     if (outerDiv && innerDiv) {
         interval = setInterval(() => {
        timeout = handleFade(timeout)
-    //    console.log(timeout);
         }, 4000)
     }
     return () => {
@@ -79,7 +76,6 @@ useEffect(() => {
 
     return (
         <div>
-            {/* <Navigation /> */}
         <div id="hp-master-container">
                 <div
                 className="bg-img-outer"
